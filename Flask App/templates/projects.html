@@ -1,21 +1,55 @@
-{% extends "layout.html" %}
-{% block title %}{{title}}{% endblock %}
-{% block head %}
-  {{ super() }}
-{% endblock %}
-{% block heading %}
-  {{ super() }}
-{% endblock %}
-
-
-
-{% block content %}
+{% extends "layout.html" %} {% block title %}{{title}}{% endblock %} {% block head %} {{ super() }} {% endblock %} {% block
+heading %} {{ super() }} {% endblock %} {% block content %}
 <center>
-<h1>NBA Analytics | Web Scraping </h1>
-<br />
-<hr>
-<div align="justify">Here is my soft introduction to my NBA Analytics Python project. The datasets used in this project are results of web scraping through a popular Python module called <a href="http://selenium-python.readthedocs.io">Selenium</a>. I put this module to work on sports-related websites such as <a href="http://www.espn.com">ESPN.com</a> and <a href="https://stats.nba.com">Stats.NBA.com</a>.
-</div>
-<hr>
+  <h1>NBA Analytics | Web Scraping </h1>
+  <br />
+  <hr>
+  <div align="justify">
+    <p>
+      Here is my soft introduction to my NBA Analytics Python project. The dataset used in this project are results of web scraping
+      through a popular Python package called
+      <a href="http://selenium-python.readthedocs.io">Selenium</a>. I put this module to work on sports-related websites such as
+      <a href="http://www.espn.com">ESPN.com</a> and
+      <a href="https://stats.nba.com">Stats.NBA.com</a>.
+    </p>
+    <h3>The Right Tools</h3>
+    <p>
+      I have spent many hours on choosing the right tools through trial and error methods. I use a MacBook Pro for my work, so
+      some of the tools I would initially choose were not compatible and this would force me to find a different tool that
+      could do the same thing. After finally deciding that I will complete this project through a cloud databse, I began
+      to look at other tools that would help me complete the rest of my objective. I explored with AWS, Azure, Jupyter Notebook,
+      PyCharm, Visual Studio Code, Sublime, Nbviewer, and many extensions offered with some of these popular tools. Eventually
+      I came down to a set I preferred among others and that accomplished what I needed while developing this project.
+    </p>
+    <p>
+      The the cloud database platform I decided to use was
+      <b>Microsoft Azure</b> and for several reasons. Azure offered simplicity (over AWS), integration ease, and most of all,
+      free services that come with a student account. I started off performing my code in
+      <b>Jupyter Notebook</b>, but noticed that a lot of way to do things with flask and other tools were not possible with
+      this platform. I then tried PyCharm and VisualStudio to find something more suitable. When compared to Jupyter's platform,
+      these two appeared to be very clunky (although both have many more capabilities). I made my way back to Jupyter and
+      began to research workarounds. As for the last tool (editor), it came down to choosing something that could interact
+      well with Jupyter. When I was not using Python code in Jupyter (mainly HTML) I wanted something a little more intuitive.
+      This is where I started using
+      <b>Visual Studio Code</b> to make my .html file edits.
+      <h3>Web Scraping</h3>
+
+      <p>This was by far the biggest challenge! It was suggested to use an API to gather my data, but I was determined to produce
+        my own data from popular websites such as
+        <a href="http://www.espn.com/" target="blank">ESPN.com</a> and
+        <a href="http://stats.nba.com/" target="blank">Stats.NBA.com</a> - The web scraping research started with learning in detail how another individual did something
+        similar I had planned. I used the
+        <a href="https://nycdatascience.com/blog/student-works/web-scraping/web-scraping-nba-stats/" target="blank">foundations of his code</a> foundations of his code and started building my own web scraping script. As I began to
+        build my own, I change a lot of the foundational code to something that would meet my needs better.
+      </p>
+      <h3>The Results</h3>
+      <p>
+        I was able to produce decent looking files that gave me opportunities to create insightful data analytics. Below are a few
+        screenshots of my completed code while using created tables with Python's
+        <b>pandas</b> to create DataFrame within Jupyter.
+      </p>
+    </p>
+  </div>
+  <hr>
 </center>
 {% endblock %}
